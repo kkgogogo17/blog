@@ -5,6 +5,8 @@
 	"private": true,
 	"scripts": {
 		"postinstall": "npm rebuild sharp --force",
+		"clean:astro-cache": "rm -rf .astro node_modules/.astro node_modules/.vite",
+		"prebuild": "pnpm clean:astro-cache",
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro build",
