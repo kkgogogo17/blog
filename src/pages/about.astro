@@ -1,0 +1,18 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description: "About Eric's Blog",
+	title: "About",
+};
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-12">About</h1>
+	<div class="prose prose-sm prose-cactus max-w-none">
+		<p>This is Eric's personal blog for notes, essays, and technical writing.</p>
+		<p>
+			The site is powered by Astro Cactus, built as a static Astro site, and deployed on Vercel.
+		</p>
+	</div>
+</PageLayout>
