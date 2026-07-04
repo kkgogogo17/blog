@@ -9,11 +9,11 @@ export const siteConfig: SiteConfig = {
 		- The link value found in src/components/layout/Header.astro L:35
 		- In the footer found in src/components/layout/Footer.astro L:12
 	*/
-	title: "Eric's Blog",
+	title: "Zibin's Blog",
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-	author: "Eric",
+	author: "Zibin",
 	// Used as the default description meta property and webmanifest description
-	description: "A personal blog built with Astro Cactus and deployed on Vercel.",
+	description: "Zibin's personal blog for notes, essays, and technical writing.",
 	// HTML lang property, found in src/layouts/Base.astro L:18 & astro.config.ts L:48
 	lang: "en-US",
 	// Meta property, found in src/components/BaseHead.astro L:42
