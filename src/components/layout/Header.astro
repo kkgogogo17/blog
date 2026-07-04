@@ -1,8 +1,22 @@
 ---
+import { Icon } from "astro-icon/components";
 import Search from "@/components/Search.astro";
 import ThemeToggle from "@/components/ThemeToggle.astro";
 import { menuLinks } from "@/site.config";
 import { siteConfig } from "../../site.config";
+
+const socialLinks = [
+	{
+		href: "https://github.com/kkgogogo17",
+		icon: "mdi:github",
+		label: "GitHub",
+	},
+	{
+		href: "https://www.linkedin.com/in/zibinkang",
+		icon: "mdi:linkedin",
+		label: "LinkedIn",
+	},
+];
 ---
 
 <header class="group relative mb-28 flex items-center sm:ps-18" id="main-header">
@@ -47,6 +61,21 @@ import { siteConfig } from "../../site.config";
 						href={link.path}
 					>
 						{link.title}
+					</a>
+				))
+			}
+		</nav>
+		<nav aria-label="Social links" class="mt-4 hidden items-center gap-3 sm:flex">
+			{
+				socialLinks.map((link) => (
+					<a
+						class="text-muted hover:text-accent transition-colors"
+						href={link.href}
+						rel="noreferrer noopener"
+						target="_blank"
+					>
+						<Icon aria-hidden="true" class="h-6 w-6" focusable="false" name={link.icon} />
+						<span class="sr-only">{link.label}</span>
 					</a>
 				))
 			}
